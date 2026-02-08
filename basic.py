@@ -95,11 +95,67 @@ print(name2)
 print(name3)
 
 # unpack a collection
-fruits = ["apple", "banana", "Papita"]
+fruits = ["apple ", "banana ", "Papita "]
 x1, x2, x3 = fruits
 print(x1)
 print(x2)
 print(x3)
+print(x1,x2,x3)
+print(x1+x2+x3)
 
 
-# output variables
+
+# # output variables
+# x = 12
+# y = "Tanu"
+# print(y+x)  # give error data type are not suitable for adding 
+
+x = 12
+y = "Tanu"
+print(y , x)
+
+
+# global variable :-  variables which are created outside the function
+# Type 1  
+x = "awesome"
+def my_fun():
+    print(x)
+
+my_fun()
+
+# Type 2
+x = "Tani"
+def fun():
+    x = "Tanisha"
+    print(x)
+
+fun()
+
+
+x = "Tani" # global variable
+def fun(): 
+    x = "Tanisha"  # Local variable
+    return x
+    
+name = x 
+print(name)
+
+
+# To create a global variable inside a function, you can use the global keyword.
+def myfun():
+    global x
+    x = "Tanu"
+    
+myfun()
+print(x)
+
+
+x = 10
+def fun(): # agr ye fun run nhi hoga to x ki value 10 hi rhegi
+    global x
+    x = 12    
+
+fun()
+print(x)
+
+# Python Data Type
