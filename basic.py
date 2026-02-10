@@ -158,57 +158,97 @@
 # fun()
 # print(x)
 
-# Python Data Type
-x = "Hello World"
-print(type(x))
+# # Python Data Type
+# x = "Hello World"
+# print(type(x))
 
-y = 12
-print(type(y))
+# y = 12
+# print(type(y))
 
-z = 3.4
-print(type(z))
+# z = 3.4
+# print(type(z))
 
-p = 1j
-print(type(p))
+# p = 1j
+# print(type(p))
 
-q = ["Tani", "Tanu", "Tanisha"]
-print(type(q))
+# q = ["Tani", "Tanu", "Tanisha"]
+# print(type(q))
 
-r = (1,2,3,4)
-print(type(r))
+# r = (1,2,3,4)
+# print(type(r))
 
-s = range(5)
-print(s)
-print(type(s))
+# s = range(5)
+# print(s)
+# print(type(s))
 
-d = {"name" : "Tanisha", "Surname" : "Nikose"}
-print(d)
-print(type(d))
+# d = {"name" : "Tanisha", "Surname" : "Nikose"}
+# print(d)
+# print(type(d))
 
-a = {"apple", "banana", "Papita"}
-print(a)
-print(type(a))
+# a = {"apple", "banana", "Papita"}
+# print(a)
+# print(type(a))
 
-a1 =  ({"apple", "banana", "Papita"})
-print(type(a1))
+# a1 =  ({"apple", "banana", "Papita"})
+# print(type(a1))
 
-b = True
-print(type(b))
+# b = True
+# print(type(b))
 
-b1 = b"Hello"
-print(type(b1))
+# b1 = b"Hello"
+# print(type(b1))
 
-b2 = bytearray(5)
-print(b2)
-print(type(b2))
+# b2 = bytearray(5)
+# print(b2)
+# print(type(b2))
 
-m = memoryview(bytes(5))
-print(m)
-print(type(m))
+# m = memoryview(bytes(5))
+# print(m)
+# print(type(m))
 
-x = None
-print(x)
-print(print(x))
-
+# x = None
+# print(x)
+# print(print(x))
 
 # Setting the Specific Data Type
+xS1 = str("Hello World")
+print(type(xS1))
+
+xS2 = int(20)
+print(type(xS2))
+
+xS3 = float(20.5)
+print(type(xS3))
+
+xS4 = complex(1j)
+print(type(xS4))
+
+xS5 = list(("apple", "banana", "cherry"))
+print(type(xS5))
+
+xS6 = tuple(("apple", "banana", "cherry"))
+print(type(xS6))
+
+xS7 = range(5)
+print(type(xS7))
+
+xS8 = dict(name="john", age=36)
+print(type(xS8))
+
+xS9 = set(("apple", "banana"))
+print(type(xS9))
+
+xS10 = frozenset(("apple", "banana"))
+print(type(xS10))
+
+xS11 = bool(10)
+print(type(xS11))
+
+xS12 = bytes(12)
+print(type(xS12))
+
+xS13 = bytearray(5)
+print(type(xS13))
+
+xS14 = memoryview(bytes(5))
+print(type(xS14))
