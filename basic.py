@@ -252,3 +252,18 @@ print(type(xS13))
 
 xS14 = memoryview(bytes(5))
 print(type(xS14))
+
+#  Quick Question :- check pallindrome 
+
+checkpalindrome  = 1221
+num = checkpalindrome
+result  = 0
+while num > 0:
+    remainder = num % 10
+    result = (result*10) + remainder
+    num = num // 10
+
+if  checkpalindrome == result:
+    print("palindrome")
+else:
+    print("Not Pallindrome")
