@@ -213,77 +213,121 @@
 # print(x)
 # print(print(x))
 
-# Setting the Specific Data Type
-xS1 = str("Hello World")
-print(type(xS1))
+# # Setting the Specific Data Type
+# xS1 = str("Hello World")
+# print(type(xS1))
 
-xS2 = int(20)
-print(type(xS2))
+# xS2 = int(20)
+# print(type(xS2))
 
-xS3 = float(20.5)
-print(type(xS3))
+# xS3 = float(20.5)
+# print(type(xS3))
 
-xS4 = complex(1j)
-print(type(xS4))
+# xS4 = complex(1j)
+# print(type(xS4))
 
-xS5 = list(("apple", "banana", "cherry"))
-print(type(xS5))
+# xS5 = list(("apple", "banana", "cherry"))
+# print(type(xS5))
 
-xS6 = tuple(("apple", "banana", "cherry"))
-print(type(xS6))
+# xS6 = tuple(("apple", "banana", "cherry"))
+# print(type(xS6))
 
-xS7 = range(5)
-print(type(xS7))
+# xS7 = range(5)
+# print(type(xS7))
 
-xS8 = dict(name="john", age=36)
-print(type(xS8))
+# xS8 = dict(name="john", age=36)
+# print(type(xS8))
 
-xS9 = set(("apple", "banana"))
-print(type(xS9))
+# xS9 = set(("apple", "banana"))
+# print(type(xS9))
 
-xS10 = frozenset(("apple", "banana"))
-print(type(xS10))
+# xS10 = frozenset(("apple", "banana"))
+# print(type(xS10))
 
-xS11 = bool(10)
-print(type(xS11))
+# xS11 = bool(10)
+# print(type(xS11))
 
-xS12 = bytes(12)
-print(type(xS12))
+# xS12 = bytes(12)
+# print(type(xS12))
 
-xS13 = bytearray(5)
-print(type(xS13))
+# xS13 = bytearray(5)
+# print(type(xS13))
 
-xS14 = memoryview(bytes(5))
-print(type(xS14))
+# xS14 = memoryview(bytes(5))
+# print(type(xS14))
 
-#  Quick Question :- check pallindrome 
+# #  Quick Question :- check pallindrome 
 
-checkpalindrome  = 1221
-num = checkpalindrome
-result  = 0
-while num > 0:
-    remainder = num % 10
-    result = (result*10) + remainder
-    num = num // 10
+# checkpalindrome  = 1221
+# num = checkpalindrome
+# result  = 0
+# while num > 0:
+#     remainder = num % 10
+#     result = (result*10) + remainder
+#     num = num // 10
 
-if  checkpalindrome == result:
-    print("palindrome")
-else:
-    print("Not Pallindrome")
+# if  checkpalindrome == result:
+#     print("palindrome")
+# else:
+#     print("Not Pallindrome")
 
-# quick Question :-  Check if a number is armstrong number 
-print("ARMSTRONG NUMBER")
+# # quick Question :-  Check if a number is armstrong number 
+# print("ARMSTRONG NUMBER")
 
-n = 1634
-num = n
-nod = len(str(n))
-arm = 0
-while num > 0:
-    remainder = num % 10
-    arm = (remainder ** nod ) + arm
-    num = num // 10
+# n = 1634
+# num = n
+# nod = len(str(n))
+# arm = 0
+# while num > 0:
+#     remainder = num % 10
+#     arm = (remainder ** nod ) + arm
+#     num = num // 10
 
-if n == arm:
-    print(" armstrong Number ")
-else:
-    print("Not Armstrong Number")
+# if n == arm:
+#     print(" armstrong Number ")
+# else:
+#     print("Not Armstrong Number")
+
+# Python Numbers
+
+x = 1
+y = 1234567890123456789012345678901234567890
+z =-1234567898765432
+print(type(x))
+print(type(y))
+print(type(z))
+
+x1 = 1.12345
+y1 = 1.0
+z1 = -34.2345
+x2 = 35e3
+y2 = 12E4
+z2 = -87.7e100
+print(type(x1))
+print(type(y1))
+print(type(z1))
+
+e1 = 3+5j
+e2 = 5j
+e3 = -5j
+print(type(e1))
+
+p1 = 1
+p2 = 2.8
+p3 = 1j
+
+p11 = float(p1)
+p22 = int(p2)
+p33 = complex(p1)
+
+print(p11, p22, p33)
+print(type(p11))
+print(type(p22))
+print(type(p33))
+
+# note - complex number ko kisi bhi type me change kiya ja skta h 
+# agr hme koi rander number chahiye to hmare pass koi randon method nhi h, we have module for this and we can use it 
+
+import random
+print(random.randrange(90))
+print(random.randrange(0,10)),
