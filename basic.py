@@ -191,6 +191,7 @@
 
 # a1 =  ({"apple", "banana", "Papita"})
 # print(type(a1))
+# print(print(a1))
 
 # b = True
 # print(type(b))
@@ -201,6 +202,8 @@
 # b2 = bytearray(5)
 # print(b2)
 # print(type(b2))
+
+# byte ko change nhi kr skte, bytearray ko change kr skte h 
 
 # m = memoryview(bytes(5))
 # print(m)
@@ -267,3 +270,20 @@ if  checkpalindrome == result:
     print("palindrome")
 else:
     print("Not Pallindrome")
+
+# quick Question :-  Check if a number is armstrong number 
+print("ARMSTRONG NUMBER")
+
+n = 1634
+num = n
+nod = len(str(n))
+arm = 0
+while num > 0:
+    remainder = num % 10
+    arm = (remainder ** nod ) + arm
+    num = num // 10
+
+if n == arm:
+    print(" armstrong Number ")
+else:
+    print("Not Armstrong Number")
