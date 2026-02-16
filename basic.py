@@ -330,4 +330,54 @@ print(type(p33))
 
 import random
 print(random.randrange(90))
-print(random.randrange(0,10)),
+print(random.randrange(0,10))
+
+
+# # Quick questions :-  factors of a number 
+# num = 20
+# result = []
+# for i in range(1, num+1):
+#     if num % i == 0:
+#         result.append(i)
+        
+
+# print(result)
+# # tc - o(n) sc - o(k) k refers to the number of factors. The Time complexity is very High lets find the better way
+
+# num = 20 
+# result = []
+# for i in range(1, num//2):
+#     if num % i == 0:
+#         result.append(i)
+
+# result.append(num)
+# print(result)
+
+# # tc - o(n/2) lets find more better way 
+ 
+# from math import sqrt
+# num = 36
+# result = []
+# for i in range(1, (int(sqrt(num)+1))):
+#     if num % i == 0:
+#         result.append(i)
+#         if num//i != i:
+#             result.append(num//i)
+
+# result.sort()
+# print(result) 
+
+
+# Quick Question - find the freqency of the number 
+num = [5,6,7,7,1,9,111,1,1,5,1,1]
+freq_map = {}
+for i in range(0, len(num)):
+    if num[i] in freq_map:
+        freq_map[num[i]] += 1
+    else:
+        freq_map[num[i]] = 1
+
+print(freq_map)
+
+
+# Python casting
