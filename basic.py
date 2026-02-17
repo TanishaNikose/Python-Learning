@@ -368,16 +368,57 @@ print(random.randrange(0,10))
 # print(result) 
 
 
-# Quick Question - find the freqency of the number 
-num = [5,6,7,7,1,9,111,1,1,5,1,1]
-freq_map = {}
-for i in range(0, len(num)):
-    if num[i] in freq_map:
-        freq_map[num[i]] += 1
-    else:
-        freq_map[num[i]] = 1
+# # Quick Question - find the freqency of the number 
+# num = [5,6,7,7,1,9,111,1,1,5,1,1]
+# freq_map = {}
+# for i in range(0, len(num)):
+#     if num[i] in freq_map:
+#         freq_map[num[i]] += 1
+#     else:
+#         freq_map[num[i]] = 1
 
-print(freq_map)
+# print(freq_map)
 
+# # second method for find the frequency of the number -
+# num = [5,6,7,7,1,9,111,1,1,5,1,1]
+# hashmap = {}
+# for i in range(0, len(num)):
+#     hashmap[num[i]] =  hashmap.get(num[i],0) + 1
+# print(hashmap)
 
 # Python casting
+x = float(1) 
+a = x
+x = str(1)
+b = x
+print(a,b)
+
+# python strings
+print("His name is 'Tanay'")
+print('His name is "Tanay"')
+print("It's all right")
+
+# agr hm is multiline string ko kisi variable me store nhi krege to yeh ek multiline comment ki tarah treate hoga
+para ='''Lorem ipsum dolor sit amet,
+consectetur adipiscing elit,
+sed do eiusmod tempor incididunt
+ut labore et dolore magna aliqua.'''
+print(para[0])
+print("Lorem" in para) # true
+print("And" not in para) # true
+print(para[:4])
+print(para[3:10])
+print(para[-15:-1])
+print(para.upper())
+print(para.lower())
+print(para.strip()) # remove white space form begining and end
+
+a = "He,llo"
+print(a.replace("H", "T"))
+print(a.split(",")) # jaha separeator milega waha pr se array bna dega ex:-  ['He', 'llo']
+
+# # loop through a string 
+# for i in para:
+#     print(i)
+
+
